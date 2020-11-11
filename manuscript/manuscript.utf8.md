@@ -64,23 +64,15 @@ output            : papaja::apa6_pdf
 knit              : worcs::cite_essential
 ---
 
-```{r setup, include = FALSE}
-library("papaja")
-library("worcs")
-# We recommend that you prepare your raw data for analysis in 'prepare_data.R',
-# and end that file with either open_data(yourdata), or closed_data(yourdata).
-# Then, uncomment the line below to load the original or synthetic data
-# (whichever is available), to allow anyone to reproduce your code:
-# load_data()
-r_refs("r-references.bib")
-```
+
 
 This manuscript uses the Workflow for Open Reproducible Code in Science [@vanlissaWORCSWorkflowOpen2020] to ensure reproducibility and transparency. All code <!--and data--> are available at <git@github.com:IndrajeetPatil/worcs_practice.git>.
 
 This is an example of a non-essential citation [@vanlissaWORCSWorkflowOpen2020]. If you change the rendering function to `worcs::cite_essential`, it will be removed.
 
 
-```{r analysis-preferences}
+
+```r
 # Seed for random number generation
 set.seed(42)
 knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
@@ -98,12 +90,12 @@ We report how we determined our sample size, all data exclusions (if any), all m
 ## Procedure
 
 ## Data analysis
-We used `r cite_r("r-references.bib")` for all our analyses.
+We used R [Version 4.1.0; @R-base] and the R-packages *papaja* [Version 0.1.0.9997; @R-papaja], and *worcs* [Version 0.1.6.2; @R-worcs] for all our analyses.
 
 
 # Results
 
-The mean of `wt` is `r mean(mtcars$wt)`.
+The mean of `wt` is 3.21725.
 
 # Discussion
 
