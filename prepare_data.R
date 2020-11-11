@@ -5,6 +5,4 @@
 
 library(worcs)
 
-df <- mtcars
-
-worcs::closed_data(df)
+worcs::closed_data(mtcars)
