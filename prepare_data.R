@@ -4,3 +4,7 @@
 # to store the data.
 
 library(worcs)
+
+df <- mtcars
+
+worcs::closed_data(df)

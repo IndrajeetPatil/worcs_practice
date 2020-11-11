@@ -1,3 +1,10 @@
 worcs_version: 0.1.6.2
 creator: inp099
 entry_point: manuscript/manuscript.Rmd
+checksums:
+  mtcars.csv: 3184b87f041571f146a351b2cef50caa
+  synthetic_mtcars.csv: 854d1b24d9a7f214c4ec07caa8e7873f
+data:
+  mtcars.csv:
+    synthetic: synthetic_mtcars.csv
+    codebook: codebook_mtcars.Rmd

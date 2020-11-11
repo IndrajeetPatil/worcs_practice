@@ -10,3 +10,6 @@
 *.log
 *.tex
 .Rproj.user
+mtcars.csv
+!synthetic_mtcars.csv
+!codebook_mtcars.csv
